@@ -12,6 +12,12 @@ public class Vehicle {
         this.model = model;
     }
 
+    public Vehicle() {
+        setMake("Nissan");
+        setModel("GTR");
+        setYear(2018);
+    }
+
     public int getYear() {
         return year;
     }
@@ -38,5 +44,5 @@ public class Vehicle {
 
     public void getVehicleInfo(){
         System.out.println("The current vehicle is a " + getYear() + " " + getMake() + " " + getModel() );
-}
+    }
 }

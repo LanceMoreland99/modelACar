@@ -13,6 +13,7 @@ public class MainMenu {
         car.getCarInfo();
 
         menu(car);
+
     }
 
     public void menu (Car car) {
@@ -20,6 +21,28 @@ public class MainMenu {
         System.out.println("what would you like to do with the " + car.getMake() + " " + car.getModel() + " " + "?");
 
         System.out.println("1: Accelerate \n 2: Decelerate \n 3: Fill up with gas \n 4: Exit");
+
+
+        try{
+            switch(input.nextInt()) {
+
+                case 1:
+                //Custom car
+                break;
+                case 2:
+                //Pre-made car
+                break;
+                case 3: System.exit(0);
+                //Exit
+                break;
+            }
+        }catch (InputMismatchException ime) {
+            input.nextLine();
+            System.out.println("please enter a number between 1 and 3.");
+
+        }
+
+
 
         try{
             switch(input.nextInt()) {
