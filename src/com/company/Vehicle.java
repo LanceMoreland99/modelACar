@@ -5,11 +5,13 @@ public class Vehicle {
     private int year;
     private String make;
     private String model;
+    private String color;
 
     public Vehicle(int year, String make, String model) {
         this.year = year;
         this.make = make;
         this.model = model;
+
     }
 
     public Vehicle() {
@@ -17,6 +19,7 @@ public class Vehicle {
         setModel("GTR");
         setYear(2018);
     }
+
 
     public int getYear() {
         return year;
